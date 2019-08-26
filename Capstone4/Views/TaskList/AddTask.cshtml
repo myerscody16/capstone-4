@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "AddTask";
+}
+
+<h1>AddTask</h1>
+
+<form action="/Library/AddTask" method="post">
+    Task Description: <input type="text" name="TaskDesc" value="" />
+    Due date: <input type="date" name="DueDate" value="" />
+    Completion status:
+    <input type="radio" name="CompleteStatus" value="yes" />
+    <input type="radio" name="CompleteStatus" value="no" />
+
+    <input type="submit" value="Add new task" />
+</form>

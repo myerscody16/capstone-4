@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Current Task List";
+}
+
+<h1>Current Task List</h1>
+@model Capstone4.Models.Tasks
+<table class="table">
+    <th>Task Description</th>
+    <th>Due Date</th>
+    <th>Completion status</th>
+    <th>Delete?</th>
+    @foreach(var task in ViewBag.listOfTasks)
+    {
+        <td>@task.TaskDesc</td>
+        <td>@task.DueDate</td>
+        <td>@task.CompeteStatus</td>
+        //Delete button
+    }
+</table>
